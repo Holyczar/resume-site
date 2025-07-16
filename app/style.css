@@ -206,6 +206,7 @@
         }
         
         ul {
+            list-style: none;
             list-style-position: inside;
             margin-bottom: 15px;
         }
@@ -216,7 +217,7 @@
             padding-left: 20px;
         }
         
-        li::before {
+        ul li::before {
             content: '▹';
             position: absolute;
             left: 0;
@@ -246,14 +247,7 @@
             justify-content: space-between;
             margin-bottom: 5px;
         }
-        
-        .skill-bar {
-            height: 8px;
-            background: #ecf0f1;
-            border-radius: 4px;
-            overflow: hidden;
-        }
-        
+               
         .skill-progress {
             height: 100%;
             background: var(--primary);
