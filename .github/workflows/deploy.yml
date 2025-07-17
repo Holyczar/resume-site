@@ -17,5 +17,5 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
       - name: Push to GHCR
         run: |
-          docker tag resume-site ghcr.io/${{ github.actor }}/resume-site:latest
-          docker push ghcr.io/${{ github.actor }}/resume-site:latest
+          docker tag resume-site ghcr.io/holyczar/resume-site:latest
+          docker push ghcr.io/holyczar/resume-site:latest
