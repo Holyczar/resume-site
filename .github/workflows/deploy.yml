@@ -13,5 +13,5 @@ jobs:
         run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
       - name: Push to GHCR
         run: |
-          docker tag my-resume-site ghcr.io/${{ github.repository_owner }}/my-resume-site:latest
-          docker push ghcr.io/${{ github.repository_owner }}/my-resume-site:latest
+          docker tag my-resume-site ghcr.io/${{ github.repository_owner | lower }}/resume-site:latest
+          docker push ghcr.io/${{ github.repository_owner | lower }}/resume-site:latest
