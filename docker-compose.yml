@@ -1,5 +1,6 @@
 services:
   resume-site:
+    image: resume-site
     build:
       context: .
       dockerfile: docker/Dockerfile
